@@ -1,0 +1,28 @@
+name: BNC
+type: theme
+description: 'BNC Custom Responsive Theme.'
+# core: 8.x
+
+libraries:
+  - bnc/bootstrap
+  - bnc/global-css
+  - bnc/global-js
+
+regions:
+  eyebrow_nav: 'Eyebrow Nav'
+  social_icons_top: 'Social Icons - Top'
+  header_menu: 'Header Menuversion: 8.x-1.0'
+  header_search: 'Header Searchcore: 8.x'
+  content: 'Contentproject: bnc'
+  social_icons_bottom: 'Social Icons - Bottom'
+  footer_menu_1: 'Footer Menu 1'
+  footer_menu_2: 'Footer Menu 2'
+  footer_menu_3: 'Footer Menu 3'
+  footer_menu_4: 'Footer Menu 4'
+  footer_menu_5: 'Footer Menu 5'
+  footer: 'Footer'
+
+version: '8.x-1.0'
+core: '8.x'
+project: 'bnc'
+datestamp: 1455016147

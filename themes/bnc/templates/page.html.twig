@@ -1,0 +1,117 @@
+<div id="page" class="page">
+  <div id="navbar-network" class="navbar-network navbar hidden-xs">
+    <ul class="nav navbar-nav container">
+      <li class="newbay">
+        <a href="#">
+          <img class="newbaymedia" src="{{ base_path ~ directory }}/img/newbaymedia.png" alt="NewBay Media">
+        </a>
+      </li>
+      <li class="nav_links">{{page.eyebrow_nav}}</li>
+    </ul>
+  </div>
+
+  <nav id="navbar-main" class="navbar-main navbar navbar-inverse">
+    <div class="container">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{ front_page }}">
+
+            <img src="{{ base_path ~ directory }}/logo.png" alt="{{ slogan }}" title="{{ name }}" id="logo" />
+
+        </a>
+        <em class="navbar-slogan">{{ slogan }}</em>
+        <div class="navbar-buttons visible-xs">
+          <a class="navbar-search-toggle" href="#navbar-search"><span class="ion-ios-search-strong ion"></span> Search</a>
+          <a href="#" class="menu-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="ion-android-menu ion"></span>
+            Menu
+          </a>
+        </div>
+        <div class="navbar-badges hidden-xs pull-right">{{ page.social_icons_top }}</div>
+      </div>
+      <div class="navbar-row row">
+        <div class="col-navbar col-sm-12 col-md-9">
+          <div id="navbar" class="navbar-main-collapse navbar-collapse collapse">
+            {{ page.header_menu }}
+          </div><!-- /.nav-collapse -->
+        </div>
+        <div class="col-search col-sm-12 col-md-3">
+          {{ page.header_search }}
+        </div>
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+  </nav><!-- /.navbar-main -->
+
+  <div id="content" class="content-index content container">
+    <div class="banner-728 banner">
+      {{ page.top_add }}
+    </div>
+    {{ breadcrumb }}
+    <div class="wrapper">
+      {% if tabs %}
+        <div id="tabs-wrapper" class="clearfix">
+        {% endif %}
+      {{ title_prefix }}
+      {% if title %}
+        <h1 {{ tabs ? ' class="with-tabs"' : '' }}>{{ title }}</h1>
+      {% endif %}
+      {{ title_suffix }}
+      {% if tabs %}
+        {{tabs }}
+      </div>
+      {% endif %}
+      {{ tabs2 }}
+      {{ messages }}
+      {%if action_links %}<ul class="action-links">{{ action_links }}</ul>{% endif %}
+
+      <div class="clearfix">
+        {{ page.content }}
+      </div>
+    </div>
+    <div class="banner-728 banner">
+      {{ page.bottom_add }}
+    </div>
+  </div>
+
+  <footer class="footer container">
+    <div class="row">
+      <div class="footer-categories footer-col col-sm-12 col-md-4">
+        <div class="footer-subrow row">
+          <div class="footer-col col-xs-6 col-sm-5">
+            {{ page.footer_menu_1 }}
+          </div>
+          <div class="footer-col col-xs-6 col-sm-7">
+            {{ page.footer_menu_2 }}
+          </div>
+        </div>
+      </div>
+      <div class="footer-pages footer-col col-md-5">
+        <div class="footer-subrow row">
+          <div class="col-xs-4">
+            {{ page.footer_menu_3 }}
+          </div>
+          <div class="col-xs-4">
+            {{ page.footer_menu_4 }}
+          </div>
+          <div class="col-xs-4">
+            {{ page.footer_menu_5 }}
+          </div>
+        </div>
+      </div>
+      <div class="footer-social footer-col col-sm-12 col-md-3">{{ page.social_icons_bottom }}</div>
+    </div>
+    <p class="footer-copyright clearfix">
+      <span class="copyright-images">
+        <a class="footer_bc_logo" href="http://www.broadcastingcable.com">
+        <img class="broadcastingcable" src="{{ base_path ~ directory }}/img/broadcastingcable-light.png" alt="Broadcasting Cable" width="68">
+        </a>
+        <a href="http://newbaymedia.com" class="footer_newbay_logo">
+          <img class="newbaymedia" src="{{ base_path ~ directory }}/img/newbaymedia-light.png" alt="NewBay Media">
+        </a>
+      </span>
+      <span class="copyright-text">{{ page.footer }}</span>
+    </p>
+  </footer>
+
+</div><!-- /.page-->

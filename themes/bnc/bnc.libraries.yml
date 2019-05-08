@@ -1,0 +1,28 @@
+bootstrap:
+  version: VERSION
+  css:
+    base:
+      bootstrap/css/bootstrap.min.css: { weight: 0 }
+      bootstrap/css/bootstrap-submenu.min.css: {}
+
+
+global-css:
+  css:
+    theme:
+      css/broadcastingcable.css: {}
+      css/broadcastingcable_responsive.css: {}
+      css/ionicons.min.css: {}
+
+global-js:
+  header: true
+  js:
+    js/broadcastingcable.js: {}
+    js/jquery.carouFredSel-6.2.0-packed.js: {}
+    js/jquery.marquee.min.js: {}
+    bootstrap/js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

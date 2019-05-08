@@ -1,0 +1,409 @@
+https://docs.acquia.com/articles/building-drupal-8-modules
+https://www.previousnext.com.au/blog/understanding-drupal-8s-plugin-system
+page manager canot override term/nid
+https://www.drupal.org/node/2785195
+drupal8 plugin development
+https://getlevelten.com/blog/ian-whitcomb/drupal-8-module-development-part-3-plugins
+css file organization
+https://www.drupal.org/docs/develop/standards/css/css-file-organization-for-drupal-8
+theme logo
+https://www.google.co.in/search?rlz=1C1CHWA_enIN561IN573&ei=JDJvWsCNMYfivATzsJiQAw&q=drupal+8+get+site+logo++from+theme+settings+in+.theme+file&oq=drupal+8+get+site+logo++from+theme+settings+in+.theme+file&gs_l=psy-ab.3...2477529.2486892.0.2487083.21.21.0.0.0.0.283.2986.0j17j3.20.0....0...1c.1.64.psy-ab..1.2.433...35i39k1.0.lzs49MoiDTQ
+https://drupal.stackexchange.com/questions/181330/how-do-i-set-the-theme-logo
+
+taxonomy term templateurl override
+https://www.google.co.in/search?q=drupal+taxonomy+term+tempalte+url+override&rlz=1C1CHWA_enIN561IN573&oq=drupal+taxonomy+term+tempalte+url+override&aqs=chrome..69i57.32359j1j7&sourceid=chrome&ie=UTF-8
+How to correctly access entity elements in a twig template
+https://drupal.stackexchange.com/questions/204020/how-to-correctly-access-entity-elements-in-a-twig-template
+
+Get File URI from Media Entity Reference Item in Drupal 8 OR Wrong File Loaded
+http://drupalsun.com/glassdimly/2017/07/27/get-file-uri-media-entity-reference-item-drupal-8-or-wrong-file-loaded
+
+drupal 8 image url
+https://stackoverflow.com/questions/34722327/how-can-i-use-a-image-file-from-a-node-as-a-background-image-of-a-div-inside-dru
+
+drupal 8 get file mime type from url
+https://gist.github.com/aguasingas/f178864fb515e16ccfa4c6e006e9159e
+Drupal 8 getting a referenced entity's field value in its parent in twig
+https://stackoverflow.com/questions/40166152/drupal-8-getting-a-referenced-entitys-field-value-in-its-parent-in-twig
+
+How to safely render node body on a custom variable?
+https://drupal.stackexchange.com/questions/238762/how-to-safely-render-node-body-on-a-custom-variable
+If you have the node in #test like in your second example:
+
+'#test' => $node
+then you can build the render element in twig:
+
+{% set body = {
+  '#type':   'processed_text',
+  '#text':    test.body.value,
+  '#format':  test.body.format,
+} %}
+
+{{ body }}
+
+
+10 tips for Twig (in Drupal 8)
+https://industrialagency.ca/blog/10-tips-twig-drupal-8
+
+Add lytics send form data
+https://lytics.zendesk.com/hc/en-us/articles/115002311851-How-to-Send-Form-Data-to-Lytics
+https://learn.lytics.com/product-docs/data-management/sending-custom-data-to-lytics
+google: drupal send form data to lytics
+
+newsml feed example D7
+e.g. http://dev.mcn.local/extfeeds/msn.xml
+
+drupal behaviour
+https://sqndr.github.io/d8-theming-guide/javascript/behaviors.html
+
+diagonal measure of triangle
+https://www.mathopenref.com/rectanglediagonals.html
+
+read javascript to php
+<script>
+var p1 = "success";
+</script>
+</head>
+
+<body>
+
+<?php
+echo "<script>document.writeln(p1);</script>";
+?>
+
+menu item create programatically
+https://digitalist.se/blogg/create-menu-items-programmatically-drupal-8
+https://drupal.stackexchange.com/questions/197073/how-do-i-create-menu-links-programmatically
+https://www.drupal.org/forum/support/module-development-and-code-questions/2015-09-09/solved-how-to-add-a-menu-link-to-a
+
+menu item attributes
+https://www.agoradesign.at/blog/add-custom-menu-item-attributes-drupal-8
+https://www.drupal.org/docs/8/api/menu-api/providing-module-defined-menu-links
+
+non clickable menu link drupal 8
+https://drupal.stackexchange.com/questions/229376/non-clickable-menu-items
+
+drupal 8 get current page url
+http://www.drupal8.ovh/en/tutoriels/27/get-current-page-uri-on-drupal-8
+
+
+Print Drupal DB queries and arguments : 
+
+ dpm((string) $query);
+ dpm($query->arguments());
+ 
+Drupal 8 add external php library
+https://www.drupal.org/project/libraries/issues/2443985
+
+drupal 8 passwords
+https://lakshminp.com/user-authentication-drupal-8-passwords
+
+https://lakshminp.com/posts
+
+drupal 8 inline validationmessage
+https://antistatique.net/en/we/blog/2017/02/16/drupal-8-inline-messages-validation-in-forms
+https://gist.github.com/WengerK/aac6486b95c120e683cac4be6e1727d6
+https://www.drupal.org/forum/support/module-development-and-code-questions/2016-12-14/drupal-8-custom-forms-inline-errors
+
+generate drupal 8 hash salt
+https://gist.github.com/pfaocle/ec6c0c4a65c70f6fb1e1
+
+D7 reset admin pass
+https://knackforge.com/blog/sivaji/different-ways-reset-drupal-admin-password
+
+https://dropsolid.com/en/blog/drupal-8-and-react-native
+
+https://www.eeweb.com/tools/4-band-resistor-calculator
+https://www.electroschematics.com/tools/
+
+PHP Namespace
+http://php.net/manual/en/language.namespaces.basics.php
+http://php.net/manual/en/language.namespaces.importing.php
+
+socket.io,websocket
+https://www.nginx.com/blog/nginx-nodejs-websockets-socketio/
+
+drush @pantheon.new-farmjournal-pro.live mca-createuser-fromcsv --uri=http://www.profarmer.com
+
+node teaser with html
+https://drupal.stackexchange.com/questions/197627/how-do-i-get-node-body-node-teaser
+https://blog.42mate.com/how-to-do-some-basic-code-things-in-drupal-8/
+
+session in drupal 8
+https://atendesigngroup.com/blog/storing-session-data-drupal-8
+https://stackoverflow.com/questions/41740584/is-it-ok-to-use-sessionvariables-in-drupal-8
+
+marketo api
+https://github.com/dchesterton/marketo-rest-api/blob/master/src/Client.php
+https://github.com/rahul-gore-asentech/REST-Sample-Code/blob/master/php/LeadDatabase/StaticLists/GetLists.php
+
+prevent submit/click link on condition
+https://css-tricks.com/dangers-stopping-event-propagation/
+
+check click in divs
+https://stackoverflow.com/questions/28659036/catch-click-event-on-any-element-inside-a-div
+
+angular external image path
+https://docs.angularjs.org/api/ng/directive/ngSrc
+
+add variable to json object
+https://stackoverflow.com/questions/4071499/dynamically-add-variable-name-value-pairs-to-json-object
+
+disable and enable onclick event
+https://stackoverflow.com/questions/18982642/how-to-disable-and-then-enable-onclick-event-on-div-with-javascript
+
+Git find commits by message/word
+$ git log --grep="choose"
+
+Show commit
+git show [hashkey of commit]
+after that to exit use :q
+
+Cron run check auto
+https://ndigit.co/articles/running-cron-on-pantheon-more-often-than-1-hour/
+https://pantheon.io/docs/drupal-cron/
+https://valuebound.com/resources/blog/schedule-automated-tasks-drupal-cron
+
+cron hit
+https://ndigit.co/articles/running-cron-on-pantheon-more-often-than-1-hour/
+
+pantheon environments
+in_array($_ENV['PANTHEON_ENVIRONMENT'], array('dev', 'test', 'live')
+
+drupal 8 routing system
+https://www.drupal.org/docs/8/api/routing-system/structure-of-routes
+
+drupal 8 user_cookie_save
+https://drupal.stackexchange.com/questions/4419/storing-anonymous-user-information-in-a-cookie
+
+javascript cookie
+https://www.guru99.com/cookies-in-javascript-ultimate-guide.html
+
+drupal 8 read get post requests
+https://drupal.stackexchange.com/questions/207044/how-to-get-post-and-get-parameters
+
+javascript ajax get method
+https://guide.freecodecamp.org/jquery/jquery-ajax-get-method/
+https://api.jquery.com/jQuery.get/#jQuery-get-url-data-success-dataType
+
+drupal 8 symfony session mgt
+https://www.tutorialspoint.com/symfony/symfony_cookies_session_management.htm
+
+drupal 8 cookie
+https://www.drupal.org/forum/support/post-installation/2016-11-12/setting-cookie-with-symfony
+https://stackoverflow.com/questions/7727442/read-and-write-cookie-in-symfony2/16414880#16414880
+
+drupal 8 private temp storage
+https://atendesigngroup.com/blog/storing-session-data-drupal-8
+https://www.anubavam.com/blogs/how-store-session-data-drupal-8
+
+drupal 8 radio button custom attribute
+https://api.drupal.org/api/drupal/includes%21form.inc/function/form_process_radios/7.x
+
+drupal custom taxonomy term page
+https://www.appnovation.com/blog/custom-taxonomy-term-pages
+
+css for first element
+https://stackoverflow.com/questions/2717480/css-selector-for-first-element-with-class
+
+place div side by side
+https://stackoverflow.com/questions/2637696/how-to-place-div-side-by-side
+
+***** Drupal 8 views templates override
+http://redcrackle.com/blog/drupal-8/theme-views-templates
+https://drupal.stackexchange.com/questions/163801/pattern-name-for-override-view-templates
+
+Drupal 8 fields data
+https://blog.usejournal.com/getting-drupal-8-field-values-in-twig-22b80cb609bd
+
+Twig get file field data
+{# { file_url(content.field_report_file['#items'].entity.uri.value) } #}
+{{ kint(content.field_report_file['#items'].entity) }}
+{{ kint(content.field_report_file['#items'].entity.Id()) }}
+{% set fileid = content.field_report_file['#items'].entity.Id() %}
+
+twig download button
+https://stackoverflow.com/questions/21550531/how-to-download-a-file-from-view-in-symfony
+
+file path and url from fid
+https://drupal.stackexchange.com/questions/105064/how-to-get-the-absolute-path-for-files-based-on-fid
+
+Twig tips
+https://industrialagency.ca/blog/10-tips-twig-drupal-8
+https://stackoverflow.com/questions/13010411/symfony2-force-file-download
+https://stackoverflow.com/questions/28910112/how-to-create-a-link-that-download-a-file-in-symfony/28910823
+
+drupal 8 theme suggestion
+https://drupal.stackexchange.com/questions/207243/how-do-i-theme-a-taxonomy-term-page/207249
+
+drupal custom taxonomy page
+https://www.reinisfischer.com/drupal-8-custom-taxonomy-term-pages-views
+https://www.drupal.org/forum/support/post-installation/2012-04-05/how-do-i-override-a-taxonomyterm-list-with-a-view
+
+drupal 8 alter route
+https://dev.acquia.com/blog/coding-drupal-8/defining-and-altering-routes-in-drupal-8/22/03/2016/9891
+https://www.previousnext.com.au/blog/dynamic-routes-drupal-8-routesubscriber
+
+drupal 8 route optional params
+https://www.lullabot.com/articles/what-happened-to-hook_menu-in-drupal-8
+
+drupal 8 routematch example
+https://hotexamples.com/examples/-/Drupal/routeMatch/php-drupal-routematch-method-examples.html
+
+route callback in routing file
+route_callbacks:
+  - '\Drupal\custom_core\Routing\TaxonomyPageRoutes::routes'
+  
+  example - views module
+  
+command tricks for developers
+https://industrialagency.ca/blog/command-line-tricks-web-developers
+
+custom template for ckeditor in drupal 7
+https://industrialagency.ca/blog/creating-custom-templates-ckeditor-drupal-7
+
+xdebug with php
+https://industrialagency.ca/blog/debugging-php-with-xdebug
+
+drupal 8 create node programatically
+https://drupal.stackexchange.com/questions/185442/programmatically-create-nodes
+https://docs.acquia.com/tutorials/fast-track-drupal-8-coding/create-nodes-programmatically/
+https://www.drupal.org/project/media_entity/issues/2813025
+https://leopathu.com/content/programmatically-create-node-image-field-drupal-8
+https://www.fuseiq.com/blog/import-drupal-8-content-csv-file
+
+xdebug setup
+https://industrialagency.ca/blog/debugging-php-with-xdebug
+http://wiki.netbeans.org/HowToConfigureXDebug#Notes_on_Windows_Configuration
+
+twig functions and filters
+https://bsd.readme.io/docs/useful-twig-functions-and-filters
+https://www.branchcms.com/learn/docs/developer/twig/filters
+
+drupal novice issues
+https://www.drupal.org/project/issues/search?status%5B0%5D=1&status%5B1%5D=8&status%5B2%5D=13&issue_tags_op=%3D&issue_tags=Novice
+
+- https://www.drupal.org/project/drupal/issues/3015963
+https://www.drupal.org/files/issues/2018-11-25/Capture.PNG
+https://www.drupal.org/docs/8/theming/twig/twig-template-naming-conventions
+https://www.drupal.org/docs/8/api/quick-edit-api/overview
+https://wimleers.com/article/drupal-8-structured-content-authoring-experience
+
+- https://www.drupal.org/project/drupal/issues/2851204
+- https://www.drupal.org/project/drupal/issues/2851204#comment-12912284
+
+- https://www.drupal.org/project/drupal/issues/2854138
+
+- https://www.drupal.org/project/drupal/issues/2066993
+
+- https://www.drupal.org/project/drupal/issues/2629286
+
+https://pareview.sh/pareview/https-git.drupal.org-project-site_env.git
+
+widths based on view ports
+https://web-design-weekly.com/2014/11/18/viewport-units-vw-vh-vmin-vmax/
+
+
+
+forticlient issue win 7
+https://kb.ic.uk/article/technical-note-error-unable-to-establish-the-vpn-connection-the-vpn-server-may-be-unreachable-5-on-forticlient-with-ssl-vpn-124.html
+
+Add pager to drupal 8 module
+https://drupal.stackexchange.com/questions/238470/adding-pager-to-queried-content-in-a-custom-module-drupal-8
+*https://drupal.stackexchange.com/questions/238466/pager-with-entityquery
+https://www.drupal.org/docs/8/modules/jsonapi/pagination
+
+https://drupal.stackexchange.com/questions/206169/how-to-add-pager-to-a-custom-page
+http://w3shaman.com/article/drupal-8-sortable-table-pager
+
+https://www.valuebound.com/resources/blog/how-to-create-form-table-pagination-drupal-8
+
+
+imagestyle patch
+\core\modules\image\src\Entity\ImageStyle.php
+/*$is_writable = NULL;
+        if ($class) {
+          $is_writable = $class::getType() & StreamWrapperInterface::WRITE;
+        }*/
+        
+        
+drupal 8 views        
+https://steemit.com/drupal/@develcuy/adding-custom-contextual-links-to-a-views-page-in-drupal-8   
+https://www.valuebound.com/resources/blog/overview-drupals-view-execution-order
+
+https://drupalize.me/videos/write-patch?p=1176
+
+https://drupal.stackexchange.com/questions/195083/modifying-view-in-hook-views-pre-render
+
+drupal 8 import from csv
+https://www.fuseiq.com/blog/import-drupal-8-content-csv-file
+
+https://boylesoftware.com/blog/drupal-8-migration-taxonomy-term-lookups/
+
+Drupal 8 Frequently Used Services, Functions, and Statements
+http://www.tothenew.com/blog/drupal-8-frequently-used-services-functions-statements/
+https://blog.42mate.com/how-to-do-some-basic-code-things-in-drupal-8/
+
+
+
+How to add a custom variable in Drupal’s views template file
+https://www.zyxware.com/articles/3561/how-to-add-a-custom-variable-in-drupal%E2%80%99s-views-template-file
+https://www.annertech.com/blog/things-learned-drupal-twig-slack-volume-2
+
+
+https://www.webwash.net/how-to-create-a-custom-field-formatter-in-drupal-8/
+
+grayout image
+https://stackoverflow.com/questions/286275/gray-out-image-with-css
+https://css-tricks.com/how-to-disable-links/
+
+https://industrialagency.ca/blog
+
+drupal 8 services
+https://www.craftofcoding.com/writing-your-first-drupal-service/
+https://drupal.stackexchange.com/questions/249634/how-can-i-create-a-custom-service
+https://www.drupal.org/docs/8/api/services-and-dependency-injection/structure-of-a-service-file
+
+drupal 8 set multiple values to node field
+https://drupal.stackexchange.com/questions/199044/how-to-set-value-for-multivalue-field-in-drupal-8-programmatically
+https://drupal.stackexchange.com/questions/229629/adding-multiple-taxonomy-terms-to-a-node-via-code/229632
+
+
+drupal session
+clear session
+https://drupal.stackexchange.com/questions/229018/how-can-i-destroy-or-unset-session
+
+return response in controller
+https://stackoverflow.com/questions/11190770/controller-must-return-a-response-in-symfony2
+
+disable block cache
+https://www.hashbangcode.com/article/drupal-8-how-avoid-block-caching
+https://drupal.stackexchange.com/questions/219568/stop-full-page-html-from-being-cached
+https://drupal.stackexchange.com/questions/153411/passing-html-to-the-response-object
+
+
+
+disable page cache
+for contrib module route
+https://drupal.stackexchange.com/questions/151254/how-can-i-prevent-a-particular-page-being-cached
+https://drupal.stackexchange.com/questions/230169/disable-caching-on-a-route
+https://drupal.stackexchange.com/questions/256769/disable-the-cache-for-a-specific-view
+
+https://webdev.iac.gatech.edu/blog/drupal-8-caching-for-dummies
+
+
+drupal 8 Views execution order
+https://www.valuebound.com/resources/blog/overview-drupals-view-execution-order
+
+javascript set timeout function
+http://www.jquerybyexample.net/2012/02/how-to-use-jquery-settimeout-function.html
+
+Drupal 8 hooks
+https://x-team.com/blog/drupal-8-hooks/
+https://cryptic.zone/blog/where-hook_page_alter-drupal-8
+
+drupal 8 route file structure
+https://www.drupal.org/node/2092643#section-requirements
+
+two way iframe communication
+https://gist.github.com/pbojinov/8965299

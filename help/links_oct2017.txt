@@ -1,0 +1,319 @@
+ drupal 8
+ 
+ IDE editors for drupal 8 & configure
+ 
+ https://www.drupal.org/docs/develop/development-tools
+ 
+ drupal 8 twig template tutorial
+ https://www.google.co.in/search?rlz=1C1CHWA_enIN561IN573&q=drupal+8+twig+template+tutorial&oq=drupal+8+twig+template+tutorial&gs_l=psy-ab.3...17870.20533.0.21653.9.9.0.0.0.0.159.1092.4j5.9.0....0...1.1.64.psy-ab..0.1.97...35i39k1j0i13i30k1.0.wauJExKn3IY
+ 
+ https://knpuniversity.com/screencast/twig/basics
+ 
+ https://sqndr.github.io/d8-theming-guide/twig/twig-basics.html
+ 
+ https://www.ostraining.com/blog/drupal/
+ 
+ https://www.ostraining.com/blog/drupal/7-vs-8/
+ 
+ https://www.drupal.org/node/1823416
+ 
+ https://www.drupal.org/docs/8/theming
+ 
+ https://www.drupal.org/docs/8/theming-drupal-8/defining-a-theme-with-an-infoyml-file
+ 
+ http://symfony.com/doc/current/components/yaml/yaml_format.html
+ 
+ Creating Layouts with the Layout Plugin Module in Drupal 8
+ 
+   https://www.youtube.com/watch?v=4g4w0kipyNs
+ 
+   https://www.youtube.com/watch?v=Wwsuze0jfZo
+   
+creating theme layout example in drupal 8
+https://www.drupalaid.com/blog/our-first-site-built-with-drupal-8-how-we-did-it
+
+registering layout for drupal 8.2
+https://www.drupal.org/node/2578731
+
+for 8.3 
+https://www.drupal.org/node/2619168
+https://www.drupal.org/docs/8/api/layout-api/how-to-register-layouts
+   
+Drupal 8 Now: Object Oriented plugins in Drupal 7
+https://www.previousnext.com.au/blog/drupal-8-now-object-oriented-plugins-drupal-7
+ 
+ pagemanager in drupal 8
+ https://www.xenomedia.com/blog/using-page-manager-customize-user-display-drupal-8
+ 
+ How to Build Custom Pages Using Page Manager and Panels in Drupal 8
+ https://www.webwash.net/how-to-build-pages-using-page-manager-and-panels-in-drupal-8/
+ 
+ https://www.drupal.org/node/2867565
+ 
+ theming drupal 8
+ https://www.drupal.org/docs/8/theming/upgrading-7x-themes-to-8x
+ 
+ https://www.youtube.com/watch?v=xdifbN3y5hU
+ 
+ https://www.drupal.org/docs/8/theming-drupal-8/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-theme#external
+ 
+ drupal 8 theme folder structure
+ https://www.drupal.org/docs/8/theming-drupal-8/drupal-8-theme-folder-structure
+ 
+ Drupal 8 Module Development, Part 3: Plugins
+ https://getlevelten.com/blog/ian-whitcomb/drupal-8-module-development-part-3-plugins
+ 
+ ***
+ http://befused.com/drupal/first-drupal8-module
+ 
+ Drupal 8 Site Building, 10.5: Override Layout Template
+ https://www.youtube.com/watch?v=Spo1_KVtmtE
+ 
+ get theme details
+ https://www.drupal8.ovh/en/tutoriels/233/get-theme-details-name-regions-libraries
+ 
+ 
+ Site Name:    
+$site_name = \Drupal::config('system.site')->get('name');
+ 
+
+Site Address (Host)
+$site_addr = "http://" . \Drupal::request()->getHost();
+
+global variables
+https://www.drupal8.ovh/index.php/en/tutoriels/91/drupal-8-global-variables-globals
+
+Get args from URL in Drupal 8
+https://www.drupal8.ovh/en/tutoriels/79/get-args-from-url-drupal-8
+Example: 
+
+    $current_url = Url::fromRoute('<current>');
+    $path = $current_url->toString();
+    //OR of you want to get the url without language prefix
+    $path = $current_url->getInternalPath();
+    $path_args = explode('/', $path);
+
+Method 2: (Get first argument from url on Drupal 8)
+
+    $request = \Drupal::request();
+    $current_path = $request->getPathInfo();
+    $path_args = explode('/', $current_path);
+    $first_argument = $path_args[1];
+
+ 
+ 
+ 
+Module path in Drupal 8
+$module_handler = Drupal::service('module_handler');
+$path = $module_handler->getModule('your_module')->getPath();
+ 
+ twig debug
+ https://www.drupal8.ovh/en/tutoriels/136/theming-enable-twig-templates%C2%A0debug
+ 
+ calling twig in controller
+ https://gist.github.com/jmolivas/d29065493a91f16f35b2
+ 
+ How to Programmatically Create a Block in Drupal 8
+ https://www.webwash.net/programmatically-create-block-drupal-8/
+ 
+ http://valuebound.com/resources/blog/drupal-8-how-to-create-a-custom-block-programatically
+ 
+ http://enzolutions.com/articles/2015/11/21/how-to-manipulate-an-entityblock-programmatically-in-drupal-8/
+ 
+ Creating a custom form in a block in two steps in Drupal 8
+ http://valuebound.com/resources/blog/creating-a-custom-form-in-a-block-in-two-steps-in-Drupal-8
+ 
+ http://www.tothenew.com/blog/how-to-programmatically-replace-the-content-in-the-custom-block-in-drupal-8/
+ 
+ http://valuebound.com/resources/blog/how-to-create-custom-form-crud-create-delete-update-operations-drupal-8
+ 
+ Adding configuration options to a block type's form
+ https://www.drupal.org/node/1880620
+ 
+ *** Create a configurable Block programmatically
+ https://www.drupal8.ovh/en/tutoriels/270/create-a-configurable-block-programmatically
+ 
+ https://www.drupal8.ovh/tutoriels/107/create-a-simple-block-programmatically
+ 
+ Add twig template to a custom Module, Block or Page
+ https://www.drupal8.ovh/index.php/en/tutoriels/140/add-twig-template-to-a-custom-module-block-or-page
+ 
+ http://www.tothenew.com/blog/how-to-programmatically-replace-the-content-in-the-custom-block-in-drupal-8/
+ 
+ https://www.drupal8.ovh/index.php/en/tags/drupal-8?page=1
+ 
+ Create a new Plugin type using Drupal 8 Plugin API
+ https://www.drupal8.ovh/en/tutoriels/186/create-a-new-plugin-type-using-drupal-8-plugin-api
+ 
+ Entityquery in Drupal 8
+ https://www.drupal.org/node/1827278
+ 
+ https://drupal.stackexchange.com/questions/226396/perform-a-query-with-an-entity-field-condition-with-multiple-values
+ 
+ https://docs.acquia.com/article/lesson-61-entity-queries-and-loading-entities
+ 
+ Namespace
+
+Drupal\Core\Entity\Query
+
+ db query example
+http://saw.tl/drupal/drupal8-multiple-join-query.html
+
+ Using the entity API in Drupal 8 get node data create node
+ https://lakshminp.com/using-entity-api-drupal-8
+ 
+ get Node values
+ http://www.zyxware.com/articles/5555/drupal-how-can-we-load-node-file-taxonomy-entities-by-id-in-drupal-8
+ 
+ https://blog.42mate.com/how-to-do-some-basic-code-things-in-drupal-8/
+ 
+ 
+ get image url and set image style
+ https://drupal.stackexchange.com/questions/224294/how-to-get-an-image-url-from-a-field-in-a-twig-template
+ 
+ multisite
+ 
+ google: drupal how to render different pages based on country
+ 
+ https://drupal.stackexchange.com/questions/104778/creating-multi-country-website-where-each-countrys-site-is-multilingual?rq=1
+ 
+ https://www.drupal.org/project/country_specific_nodes
+ 
+ https://drupal.stackexchange.com/questions/216650/how-to-split-content-for-different-target-audience
+ 
+ 
+ https://drupal.stackexchange.com/questions/137319/getting-the-image-url-from-a-field-image-on-a-node
+ 
+ send /attachquerystring in routing url
+ https://drupal.stackexchange.com/questions/189305/can-we-add-the-destination-query-parameter-to-a-link-from-yml-configuration
+ 
+ https://www.drupal.org/node/2361299#comment-11591109
+ 
+ https://stackoverflow.com/questions/24754661/drupal-8-images-with-image-style
+ 
+ create URL
+ https://www.drupal8.ovh/en/tutoriels/275/drupal-8-url-tips-get-name-path-args
+ 
+ create panel page for taxonomy term page
+ https://drupal.stackexchange.com/questions/219028/create-panel-page-for-taxonomy-term-page
+ 
+ https://www.drupal.org/node/2785195
+ 
+ Defining own service in drupal 8 to use custom class in other modules
+ http://valuebound.com/resources/blog/how-to-define-your-own-services-drupal-8
+ 
+ Apache Solr 3 on Drupal 7 Turtorial with screen shots
+ https://web3us.com/drupal6/how-create-web-site-handbook/apache-solr-drupal/apache-solr-3-drupal-7-turtorial-screen-shots%26sa
+ 
+ advanced site building
+ https://buildamodule.com/collection/advanced-site-building-in-drupal-7#viewing
+ 
+ 10 things i learnet in drupal 8
+ http://www.pixelite.co.nz/article/10-things-i-learnt-building-in-drupal-8/
+ 
+ Drupal - How to Guides
+ https://web3us.com/drupal6/drupal-6-how-guides
+ 
+ https://www.youtube.com/user/DrupalAssociation/
+ 
+ Altering, Extending, and Enhancing Drupal 8
+ https://events.drupal.org/neworleans2016/sessions/altering-extending-and-enhancing-drupal-8
+ 
+ 
+ http://codekarate.com/codekarate-posts/type/daily_dose_of_drupal?search_api_views_fulltext=&page=2
+ 
+ https://telecomtalk.info/a-handy-guide-to-satellites-used-for-broadcasting-dth-signals-in-india/141807/
+ 
+ cached websites
+ https://www.lifewire.com/highlight-keyword-google-cache-search-1616811
+ 
+ heart attack symptoms
+ https://herbal-m-e-d-i-c-i-n-e.blogspot.com/2017/08/if-you-have-these-6-symptoms-you-could.html
+ 
+ drupal help
+ http://www.codeexpertz.com/category/drupal
+ drupal security
+ http://www.codeexpertz.com/blog/drupal/drupal-and-security-advice-site-builders-and-coders
+ 
+ https://gotohayato.com/?page=18
+ 
+ DRUSH
+ drush not recognize new update
+ https://gotohayato.com/content/48
+ 
+ drush 7 and drush 8 symulteneously
+ https://modulesunraveled.com/blog/install-drush-7-and-8-and-automatically-switch-versions-based-project
+ 
+ install drush 8
+ http://whaaat.com/installing-drush-9-using-composer
+ 
+ upgrade drush
+ https://www.chapterthree.com/blog/installing-drush-8
+ 
+ drush on diff platforms
+ https://www.drupal.org/node/1791676
+ 
+ ubuntu
+ https://www.drupal.org/node/1248790
+ 
+ custom layout in drupal 8
+ https://www.youtube.com/watch?v=gmX2jnH9Kdg
+ 
+ instrumental songs
+ https://www.indiamp3.com/instrumental-mp3-songs
+ 
+ drupal migration
+ https://umaradil.wordpress.com/2013/05/23/a-simple-guide-to-drupal-to-drupal-migration/
+
+drupal 8 create link
+
+https://drupal.stackexchange.com/questions/144992/how-do-i-create-a-link
+ 
+drupal 8 custom token
+https://stefvanlooveren.me/blog/how-create-custom-image-token-drupal-8
+
+drupal sites
+https://www.drupalaid.com/blog/3-things-you-should-hide
+
+Add SSL to drupal sites
+https://www.drupalaid.com/blog/how-to-quickly-add-ssl-to-your-drupal-site
+
+generate ssl
+https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04
+
+page load time optimize
+https://www.drupalaid.com/blog/drupal-speed-little-things-you-can-do-reduce-your-load-time
+
+protect from spam in email form
+https://www.drupalaid.com/blog/the-secret-to-stop-form-spam-in-drupal
+
+mysql no of occurence of specific word
+https://stackoverflow.com/questions/12344795/count-the-number-of-occurrences-of-a-string-in-a-varchar-field
+
+https://stackoverflow.com/questions/5649711/mysql-count-amount-of-times-the-words-occur-in-a-column
+
+drupal 8 send mail attachment
+https://labs.techaspect.com/index.php/2017/07/07/how-to-send-a-mail-with-an-attachment-in-drupal8/
+
+https://drupal.stackexchange.com/questions/101035/send-attachments-with-drupal-mail
+
+mail add bcc
+https://drupal.stackexchange.com/questions/204798/how-do-i-set-bcc-in-the-email-i-am-sending
+
+mail add cc attachments
+http://www.stringcat.com/company_blog/2012/10/12/complete-php-mail-script-with-to-replyto-cc-bcc-and-attachments/
+
+send mail with attachment
+https://www.tutdepot.com/php-e-mail-attachment-script/
+
+https://stackoverflow.com/questions/12301358/send-attachments-with-php-mail
+
+How to change default taxonomy term/termid path to a custom path in drupal 7
+https://www.zyxware.com/articles/4102/drupal-how-to-change-default-taxonomy-termtermid-path-to-a-custom-path-in-drupal-7
+
+custom term path
+https://www.appnovation.com/blog/custom-taxonomy-term-pages
+
+drupal version upgrade
+https://www.youtube.com/watch?v=JUIdn7-A62Q
+ 

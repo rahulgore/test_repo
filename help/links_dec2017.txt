@@ -1,0 +1,306 @@
+Drupal 8 theming
+
+google: Creating a Custom Panels Layout in Drupal 8
+
+register layout
+https://www.drupal.org/node/2578731
+
+google: drupal 8 free theme with custom panel layouts
+
+drupal 8 views templates
+http://redcrackle.com/blog/drupal-8/theme-views-templates
+
+drupal 8 create view programmatically
+http://subhojit777.in/create-views-programatically-drupal8/
+
+drupal export data to csv
+https://drupal.stackexchange.com/questions/39248/how-to-export-users-to-a-csv-file
+
+coding standard
+
+https://www.drupal.org/docs/develop/standards
+
+css file organization
+
+https://www.drupal.org/docs/develop/standards/css/css-file-organization-for-drupal-8
+
+d8 theme folder structure
+
+https://www.drupal.org/docs/8/theming-drupal-8/drupal-8-theme-folder-structure
+
+setting up Netbeans for drupal
+https://www.drupal.org/docs/develop/development-tools/configuring-netbeans
+
+https://www.drupal.org/node/1846954
+
+
+Notepadd++ pattern search and replace
+Find   ([0-9]{3})([\r\n]+)
+Replace  INSERT INTO news_temp2 VALUES \( \1\);\2
+
+Search mode- regular expression
+
+3 is no of characters. \1 is first arg \2 is second arg
+
+
+
+http://www.faichi.com/blog/10-advance-git-commands-code-tracking
+
+ajax form submit
+http://kali-dasan.blogspot.in/2014/07/drupal-7-ajax-form-validation-and-submit.html
+
+https://drupal.stackexchange.com/questions/5781/ajax-submitted-form-redirection
+
+ajax page load
+https://www.drupal.org/docs/7/api/javascript-api/simple-drupal-ajax-load-with-jquery-and-delivery-callback
+
+add plus minus to checkbox tree/ expand collapse
+https://drupal.stackexchange.com/questions/104452/with-bef-collapse-expand-items-under-their-parent
+
+https://www.drupal.org/project/taxonomy_tree_select/issues/1798068
+
+
+cygwin change to directory
+
+cd /cygdrive/c
+https://stackoverflow.com/questions/1850920/how-to-navigate-to-a-directory-in-c-with-cygwin
+
+rsync pantheon
+https://pantheon.io/docs/rsync-and-sftp/#download-a-drupal-directory-from-pantheon
+
+WAMP + PostgreSQL integration
+
+google: install postgresql in windows 8 wamp
+
+https://www.plaatsoft.nl/wamp-postgresql-integration/
+
+http://toolkt.com/site/install-postgresql-and-phppgadmin-in-windows-with-wamp/
+
+mail attachment mime types
+http://www.sitepoint.com/forums/showthread.php?135593-CSV-MIME-Types
+
+=====================================================================================================
+function GetMIMeType(cExt){
+var cExt = new String(cExt);
+cExt = cExt.toUpperCase();
+
+if(cExt == "TXT" || cExt == "TEXT" || cExt == "JS" )
+return "text/plain";
+else if(cExt == "CSV" )
+return "text/comma-separated-values"
+else if(cExt == "HTM" || cExt == "HTML" || cExt == "ASP" || cExt == "CGI" || cExt == "PL" )
+return "text/html";
+else if(cExt == "PDF" )
+return "application/pdf";
+else if(cExt == "RTF" )
+return "text/richtext";
+else if(cExt == "XML" )
+return "text/xml";
+else if(cExt == "WPD" )
+return "application/wordperfect";
+else if(cExt == "WRI" )
+return "application/mswrite";
+else if(cExt == "XLS" || cExt == "XLS3" || cExt == "XLS4" || cExt == "XLS5" || cExt == "XLW" )
+return "application/msexcel";
+else if (cExt == "DOC" )
+return "application/msword";
+else if (cExt == "PPT" || cExt == "PPS" )
+return "application/mspowerpoint"; 
+else if (cExt == "WML" )
+return "text/vnd.wap.wml";
+else if (cExt == "WMLS" )
+return "text/vnd.wap.wmlscript";
+else if (cExt == "WBMP" )
+return "image/vnd.wap.wbmp";
+else if (cExt == "WMLC" )
+return "application/vnd.wap.wmlc";
+else if (cExt == "WMLSC" )
+return "application/vnd.wap.wmlscriptc";
+else if (cExt == "GIF" )
+return "image/gif";
+else if (cExt == "JPG" || cExt == "JPE" || cExt == "JPEG" )
+return "image/jpeg";
+else if (cExt == "PNG" )
+return "image/x-png";
+else if (cExt == "BMP" )
+return "image/bmp";
+else if (cExt == "TIF" || cExt == "TIFF" )
+return "image/tiff";
+else if(cExt == "XWD" )
+return "image/x-xwindowdump";
+else if(cExt == "IEF" )
+return "image/ief";
+else if (cExt == "AI" || cExt == "EPS" || cExt == "PS" )
+return "application/postscript";
+else if (cExt == "AU" || cExt == "SND" )
+return "audio/basic";
+else if (cExt == "WAV" )
+return "audio/wav";
+else if (cExt == "RA" || cExt == "RM" || cExt == "RAM" )
+return "audio/x-pn-realaudio";
+else if (cExt == "MID" || cExt == "MIDI" )
+return "audio/x-midi";
+else if (cExt == "MP3" )
+return "audio/mp3";
+else if (cExt == "M3U" )
+return "audio/m3u";
+else if (cExt == "AVI" )
+return "video/avi";
+else if (cExt == "MPG" || cExt == "MPEG" || cCat == "MPE" )
+return "video/mpeg";
+else if (cExt == "QT" || cExt == "MOV" || cExt == "QTVR" )
+return "video/quicktime";
+else if(cExt == "MOVIE" )
+return "video/x-sgi-movie";
+else if (cExt == "SWA" )
+return "application/x-director";
+else if (cExt == "SWF" )
+return "application/x-shockwave-flash";
+else if (cExt == "COM" || cExt == "EXE" || cExt == "DLL" || cExt == "OCX" )
+return "application/octet-stream";
+else if (cExt == "PDB" )
+return "chemical/x-pdb";
+else if (cExt == "ZIP" )
+return "application/x-zip-compressed";
+else
+return "";
+}
+=====================================================================================
+
+export to excel csv
+http://www.the-art-of-web.com/php/dataexport/
+
+export to xls
+http://krasimirtsonev.com/blog/article/php-export-mysql-data-to-xls-file
+
+https://www.codexworld.com/export-data-to-excel-in-php/
+
+http://www.phpcodify.com/export-data-to-excel-in-php-mysql/
+
+drupal 8 get entity reference image field url
+http://drupalsun.com/glassdimly/2017/07/27/get-file-uri-media-entity-reference-item-drupal-8-or-wrong-file-loaded
+
+https://drupal.stackexchange.com/questions/229402/how-to-get-media-entity-image-entity-reference-field-url-in-twig-theme/229426
+
+https://drupal.stackexchange.com/questions/137319/getting-the-image-url-from-a-field-image-on-a-node/184636
+
+https://drupal.stackexchange.com/questions/232738/update-media-object-programatically
+
+drupal 8 get file url from fid
+https://drupal.stackexchange.com/questions/212361/how-to-get-the-url-of-a-file-field-of-a-given-node/212362
+
+drupal 8 get tid from term name
+https://drupal.stackexchange.com/questions/225209/load-term-by-name
+https://api.drupal.org/api/drupal/core%21modules%21taxonomy%21tests%21src%21Functional%21TermLanguageTest.php/8.3.x
+
+drupal 8 get child terms of tids
+https://www.webomelette.com/loading-taxonomy-terms-tree-drupal-8
+
+multiple ssh keys
+https://coderwall.com/p/7smjkq/multiple-ssh-keys-for-different-accounts-on-github-or-gitlab
+https://gist.github.com/jexchan/2351996
+https://themeteorchef.com/tutorials/setting-up-an-ssh-config-file
+https://github.com/pantheon-systems/pantheon-settings-examples/blob/master/circle.yml
+
+multiple keys pantheon
+https://github.com/westonruter/pantheon-documentation/blob/master/source/docs/articles/users/generating-ssh-keys.md
+
+https://pantheon.io/docs/ssh-keys/
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+drupal 8 get current path 
+https://drupal.stackexchange.com/questions/106103/get-the-current-path-alias-or-path
+https://www.drupal8.ovh/en/tutoriels/27/get-current-page-uri-on-drupal-8
+* https://www.hooksupport.com/blog/how-get-path-alias-and-arguments-drupal-8
+
+drupal 8 attach library to admin theme
+https://drupal.stackexchange.com/questions/202639/how-do-i-override-the-admin-theme-in-my-own-theme
+https://drupal.stackexchange.com/questions/194050/add-javascript-to-form-by-module
+https://medium.com/@ToddZebert/loading-and-using-javascript-in-drupal-8-f6643d19ae0f
+https://www.drupal.org/forum/support/module-development-and-code-questions/2015-09-25/attaching-custom-js-to-form
+https://drupal.stackexchange.com/questions/22389/right-way-to-add-js-and-css-to-node-edit-and-other-forms
+
+drupal 8 get theme name
+https://drupal.stackexchange.com/questions/203312/how-can-i-programmatically-get-the-theme-name
+
+drupal 8 form alter
+http://api.drupalhelp.net/api/drupal/modules--system--system.api.php/function/hook_form_FORM_ID_alter/8
+https://drupal.stackexchange.com/questions/22389/right-way-to-add-js-and-css-to-node-edit-and-other-forms
+
+drupal 8 configuration settings for module
+https://www.hooksupport.com/blog/drupal-8-how-create-configuration-form-drupal-8
+
+pantheon drush error:
+Warning: Permanently added the RSA host key for IP address '[35.225.3.211]:2222' to the list of known hosts.
+live.7aebbaac-79fe-4f63-aff7-a@appserver.live.7aebbaac-79fe-4f63-aff7-aafeb359db85.drush.in's password:
+/bin/bash: -c: line 0: unexpected EOF while looking for matching `''
+/bin/bash: -c: line 1: syntax error: unexpected end of file
+
+install terminus for pantheon
+https://pantheon.io/docs/terminus/install/
+
+setting certificate
+check php.ini path for cli -  $ where is php.ini
+https://stackoverflow.com/questions/29822686/curl-error-60-ssl-certificate-unable-to-get-local-issuer-certificate
+
+https://pantheon.io/docs/videos/drush/
+https://pantheon.io/blog/five-steps-feeling-drupal-drush
+
+Please go through the url to learn site building in Drupal 8. It’s a full video tutorial provided by Acquia.
+https://www.youtube.com/watch?v=R1ivRsz_urk&list=PLpVC00PAQQxGwyvUD_tYcBbLJqRC1CZ6U
+
+drupal form entity ref field set
+https://drupal.stackexchange.com/questions/252207/alter-field-value-in-a-form
+https://www.drupal.org/forum/support/module-development-and-code-questions/2015-12-19/drupal-8-submit-handler
+
+drupal 8 parse html get iframe tag attributes
+http://glassdimly.com/blog/tech/drupal-8-html-scraping-dom-drupal-planet/parse-html-drupal-8-get-attributes
+
+Rss Feeds
+samples-
+http://www.feedforall.com/sample-feeds.htm
+http://www.rss-specifications.com/blog-feed.xml
+
+Atom syndication format
+https://validator.w3.org/feed/docs/rfc4287.html
+
+How to Write Valid URL Query String Parameters
+https://perishablepress.com/how-to-write-valid-url-query-string-parameters/
+
+Add an image to your RSS feed item
+https://bhushankumarram.wordpress.com/2012/02/25/add-an-image-to-your-rss-feed-item/
+https://gist.github.com/mathetos/774e38c9ae1799e25cff
+https://wordpress.stackexchange.com/questions/59492/how-to-add-post-featured-image-to-rss-item-tag
+
+Developing Feeds with RSS and Atom by Ben Hammersley
+https://www.safaribooksonline.com/library/view/developing-feeds-with/0596008813/ch04s02.html
+
+hotjar tracking code
+https://help.hotjar.com/hc/en-us/articles/115009499088-The-Hotjar-Tracking-Code
+
+assign terms in bulk VBO
+http://drupal.forhumanists.org/drupal-humanists-chapter-17-managing-taxonomies/adding-terms-bulk-views-bulk-operations
+
+drupal 8 views rest csv export add _format=csv query string
+https://www.drupal.org/node/2954953
+
+twig operators
+https://www.branchcms.com/learn/docs/developer/twig/operators
+
+twig coding standards
+https://twig.symfony.com/doc/2.x/coding_standards.html
+
+drupal modal popup
+https://drupal.stackexchange.com/questions/178742/show-a-ctools-modal-after-form-submit
+
+Drupal 8 render twig template in controller
+https://www.drupal.org/forum/support/post-installation/2017-03-29/d8-load-a-twig-template
+https://jmolivas.weknowinc.com/how-render-twig-template-and-load-css-file-from-controller-drupal-8
+
+drupal 8 entity query
+http://drupalsun.com/zhilevan/2017/01/14/query-drupal-8-entityquery
+
+NewsML
+http://xml.coverpages.org/NewsMLForDummies.pdf
+https://www.jse.co.za/content/JSETechnologyDocumentItems/JSE%20SENS%20Real%20Time%20NewsML%20Specification%20v1.01.pdf
+https://groups.drupal.org/taxonomy/term/841

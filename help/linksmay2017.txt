@@ -1,0 +1,47 @@
+
+
+drupal setting form image upload
+
+http://www.zyxware.com/articles/4156/drupal-how-to-upload-files-using-custom-admin-settings-form
+
+https://drupal.stackexchange.com/questions/99391/add-image-file-programmatically-in-drupal-6
+
+
+https://www.drupal.org/node/1161430
+
+https://www.drupal.org/project/panels_media
+
+https://drupal.stackexchange.com/questions/59467/ctools-custom-content-type-plugin-with-image-field
+
+
+Entityfieldquery
+
+https://www.drupal.org/node/1343708
+
+
+yii project setup local
+
+http://techqa.info/programming/question/31072311/How-to-setup-existing-yii-project-in-xampp-on-windows
+
+https://stackoverflow.com/questions/31072311/how-to-setup-existing-yii-project-in-xampp-on-windows
+
+
+Drupal add js for admin themes
+
+https://drupal.stackexchange.com/questions/6641/add-javascript-files-to-the-administrative-pages
+
+
+js date formating
+
+https://stackoverflow.com/questions/3605214/javascript-add-leading-zeroes-to-date
+
+http://jsfiddle.net/xA5B7/
+
+verticle middle
+
+https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-div
+
+* 
+https://css-tricks.com/centering-css-complete-guide/
+
+https://www.google.co.in/search?q=css+align+elements+vertically+middle&rlz=1C1CHWA_enIN561IN573&oq=css+align+elements+vertically+middle&aqs=chrome..69i57j0l2.31727j0j7&sourceid=chrome&ie=UTF-8#q=css+align+image+vertically+middle+inside+article

@@ -1,0 +1,24 @@
+<div class="categoryarticles-list">
+  <div class="article row">
+    <figure class="article-figure col-xs-4">
+      {% if image is not empty  %}
+        <img src="{{ image }}" alt="">
+      {% else %}
+        <img src="{{ default_img }}" />
+      {% endif %}
+    </figure>
+    <div class="article-text col-xs-8">
+      <span class="article-category">
+        {% if  primary_category %}
+          {{ primary_category }}
+        {% endif %}
+      </span>
+      <span class="article-date">{{ post_date }}</span>
+      <h3 class="article-title">{{ title }}</h3>
+      <!--<div class="article-meta">
+        <span class="disqus-comment-count" data-disqus-identifier="node/{{ node_id }}">Comments</span>
+      | <a class="addthis_counter" addthis:url="{{ addthis_url }}"></a> Shares
+      </div>-->
+    </div>
+  </div>
+</div><!-- /.categoryarticles-list -->

@@ -1,0 +1,7 @@
+name: custom article
+type: module
+description: Defines a custom block.
+core: 8.x
+package: custom
+dependencies:
+  - block

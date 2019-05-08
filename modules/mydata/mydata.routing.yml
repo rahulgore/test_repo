@@ -1,0 +1,7 @@
+mydata.mydata_form:
+  path: '/mydata/form/mydata'
+  defaults:
+    _form: '\Drupal\mydata\Form\MydataForm'
+    _title: 'MydataForm'
+  requirements:
+    _access: 'TRUE'

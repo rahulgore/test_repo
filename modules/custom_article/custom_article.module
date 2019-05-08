@@ -1,0 +1,29 @@
+<?php
+
+function custom_article_theme($existing, $type, $theme, $path) {
+
+  return [
+    'categorized_article_main' => [
+      'variables' => ['category_name' => 'cat', 'category_linked' => NULL, 'categorized_article_listing' => 'Listing Here1' ],
+    ],
+    'categorized_article_listing' => [
+      'variables' => ['default_img' => NULL, 'image' => NULL, 'primary_category' => NULL, 'post_date' => NULL, 'title' => NULL],
+    ],
+  ];
+
+}
+
+function custom_article_preprocess_categorized_article_main(&$vars) {
+    //&$variables
+    //print '<pre>';print_r($vars);print '</pre>';
+  /*
+  $vars['categorized_article_listing'] = '';
+
+  foreach($vars['nodes'] as $node) {
+    //$category = taxonomy_term_load($node->field_news_articles_terms['und'][0]['tid']);
+    $category = taxonomy_term_load($vars['category']);
+    $vars['category_name'] = $category->name;
+    $vars['category_linked'] = l('More ' . $category->name, 'taxonomy/term/' . $category->tid, array('html' => TRUE,'attributes' => array('class' => 'viewall')));
+    $vars['categorized_article_listing'] .= theme('categorized_article_listing', array('node' => $node));
+  }/**/
+}

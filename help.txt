@@ -406,3 +406,6 @@ https://www.drupal.org/node/2092643#section-requirements
 
 two way iframe communication
 https://gist.github.com/pbojinov/8965299
+
+update core via composer
+https://www.drupal.org/docs/8/update/update-core-via-composer

@@ -409,3 +409,69 @@ https://gist.github.com/pbojinov/8965299
 
 update core via composer
 https://www.drupal.org/docs/8/update/update-core-via-composer
+
+Composerize Drupal
+https://github.com/grasmash/composerize-drupal/blob/master/README.md
+
+Use Composer with Your Drupal Project
+https://drupalize.me/tutorial/use-composer-your-drupal-project?p=3233
+
+google's mobile friendly test
+http://shallowsky.com/blog/tech/web/google-mobile-friendly.html
+
+21 drupal interview questions
+https://career.guru99.com/top-21-drupal-interview-questions/
+
+ga gtm tag on same page
+https://www.simoahava.com/analytics/ga-snippet-and-ga-gtm-tag-on-the-same-page/
+
+
+create composer file for module
+https://www.google.com/search?q=drupal+8+create+composer+file+for+module&rlz=1C1CHWA_enIN821IN821&oq=drupal+8+create+composer+file+for+module&aqs=chrome..69i57.12591j0j7&sourceid=chrome&ie=UTF-8
+
+usinf composer template for drupal project
+https://www.drupal.org/docs/develop/using-composer/using-composer-template-for-drupal-projects
+
+Managing dependencies for a custom project
+https://www.drupal.org/docs/develop/using-composer/managing-dependencies-for-a-custom-project
+
+
+drupal 8 reusable media
+https://www.annertech.com/blog/reusable-media-drupal-8-tutorial
+
+drupal 8 links
+https://drupalize.me/tutorial/links-overview-developers?p=2766
+
+drupal 8 issue - iframe
+https://www.drupal.org/project/entity_browser/issues/3036813
+
+drupal 8.6.14 requires php 7.1
+https://www.drupal.org/project/drupal/issues/3047121
+
+http://redmine.asentechllc.net/
+rahul.gore
+mypass1977
+
+pantheon
+rahulg@asentechllc.com
+Abcd$123
+
+portal.office.com
+rahulg@asentechllc.com
+*789Abcd
+
+skype
+r.gore.auxanotech
+Abcd$780
+
+jira
+rahulg@asentechllc.com
+Abcd$123
+
+
+github
+rahul-gore-asentech
+Abcd$123
+
+rahulgore
+mypass9811
